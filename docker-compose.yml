@@ -1,7 +1,7 @@
 services:
 
   grafana:
-    image: grafana/grafana:9.1.6
+    image: grafana/grafana
     container_name: grafana
     restart: always
     volumes:
@@ -17,7 +17,7 @@ services:
       - monitoring
 
   prometheus:
-    image: prom/prometheus:v2.37.1
+    image: prom/prometheus
     container_name: prometheus
     restart: always
     volumes:
